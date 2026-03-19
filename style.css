@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   font-size: 18px;
   font-family: "Bebas Neue", sans-serif;
@@ -358,6 +364,7 @@ img {
   border-left: 1px solid rgba(255, 255, 255, 0.12);
   padding: 16px;
   overflow: auto;
+  z-index: 100;
 }
 .mobile-drawer[open] .hamburger-lines {
   background-color: transparent;
