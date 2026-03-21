@@ -1,0 +1,74 @@
+/* =========================
+   GLOBAL DESIGN SYSTEM
+========================= */
+
+/* VARIABLES */
+:root {
+  --font-title: "Bebas Neue", sans-serif;
+  --font-body: "Lato", sans-serif;
+
+  --color-bg: #020817;
+  --color-text: #e5e7eb;
+  --color-primary: #7b2eb6;
+  --color-secondary: #c084fc;
+
+  --max-width: 1280px;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  letter-spacing: 1px;
+}
+
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LAYOUT */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* BUTTONS */
+.button-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--color-secondary);
+}
+
+/* UTILITIES */
+.resaltado {
+  color: var(--color-primary);
+}
