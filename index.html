@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serpents</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/Global.css" />
+    <link rel="stylesheet" href="./css/Components.css" />
+    <link id="route-stylesheet" rel="stylesheet" href="./css/Serpents.css" />
+  </head>
+  <body>
+    <header class="header site-header" id="site-header">
+      <a href="#/" data-link aria-label="Ir a la portada">
+        <img src="./img/Serpenter.png" alt="Serpents" />
+      </a>
+
+      <div class="header-left">
+        <nav class="nav-desktop" aria-label="Navegacion principal">
+          <ul class="header-navigation">
+            <li><a href="#/product" class="nav-item" data-link data-menu="Product">Product</a></li>
+            <li><a href="#/developers" class="nav-item" data-link data-menu="Developers">Developers</a></li>
+            <li><a href="#/solutions" class="nav-item" data-link data-menu="Solutions">Solutions</a></li>
+            <li><a href="#/pricing" class="nav-item" data-link data-menu="Pricing">Pricing</a></li>
+            <li><a href="#/docs" class="nav-item" data-link data-menu="Docs">Docs</a></li>
+            <li><a href="#/blog" class="nav-item" data-link data-menu="Blog">Blog</a></li>
+            <li><a href="#/about" data-link>About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <a class="button-secondary" href="#/signin" data-link>Sign in</a>
+        <a class="button-primary" href="#/product" data-link>Start your project</a>
+      </div>
+
+      <div class="card-container" aria-live="polite"></div>
+
+      <details class="mobile-drawer">
+        <summary class="hamburger" aria-label="Abrir menu">
+          <span class="hamburger-lines" aria-hidden="true"></span>
+        </summary>
+        <div class="drawer-overlay" aria-hidden="true"></div>
+        <aside class="drawer-panel" aria-label="Menu movil">
+          <div class="drawer-top">
+            <span class="drawer-title">Menu</span>
+            <button class="drawer-close" type="button" aria-label="Cerrar menu">x</button>
+          </div>
+
+          <nav aria-label="Navegacion movil">
+            <ul class="drawer-nav">
+              <li><a href="#/product" data-link>Product</a></li>
+              <li><a href="#/developers" data-link>Developers</a></li>
+              <li><a href="#/solutions" data-link>Solutions</a></li>
+              <li><a href="#/pricing" data-link>Pricing</a></li>
+              <li><a href="#/docs" data-link>Docs</a></li>
+              <li><a href="#/blog" data-link>Blog</a></li>
+              <li><a href="#/about" data-link>About</a></li>
+            </ul>
+          </nav>
+
+          <div class="drawer-actions">
+            <a class="button-secondary" href="#/signin" data-link>Sign in</a>
+            <a class="button-primary" href="#/product" data-link>Start</a>
+          </div>
+        </aside>
+      </details>
+    </header>
+
+    <main id="app" class="app-shell" aria-live="polite"></main>
+
+    <footer id="site-footer" class="site-footer">
+      <p class="site-footer-copy"><span class="resaltado">Serpents </span>is now your new home.</p>
+      <div class="site-footer-links">
+        <a href="#/about" data-link>About</a>
+        <a href="#/terms" data-link>Terms</a>
+        <a href="#/signin" data-link>Sign in</a>
+      </div>
+    </footer>
+
+    <script src="./javascript/Serpents.js" defer></script>
+    <script src="./javascript/SignIn.js" defer></script>
+    <script src="./src/js/app.js" defer></script>
+  </body>
+</html>
